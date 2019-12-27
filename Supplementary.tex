@@ -1,16 +1,41 @@
 \documentclass{article}
-%\usepackage[utf8]{inputenc}
+\usepackage{arxiv}
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}
+\usepackage{upgreek}
 \usepackage{graphicx}
 \usepackage[version=4]{mhchem}
-% Include section in journal if known, otherwise delete
-% \paperfield{Journal Section}
+\usepackage{gensymb}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
 \title{Carbon cathodes for rechargeable aluminium-ion batteries}
-%\corraddress{Author One PhD, Department, Institution, City, State or Province, Postal Code, Country}
-%\presentadd[\authfn{2}]{Department, Institution, City, State or Province, Postal Code, Country}
+\author{
+Shalini Divya\\
+  School of Chemical and Physial Sciences\\
+  Victoria University of Wellington\\
+  Wellington, New Zealand\\
+  \texttt{shalini.divya@vuw.ac.nz}\\
+  %% examples of more authors
+   \And
+  Thomas Nann\thanks{Corresponding author.}\\
+  School of Mathematical and Chemical Sciences\\
+  The University of Newcastle\\
+  Newcastle, NSW 2308, Australia\\
+  \texttt{thomas.nann@newcastle.edu.au}\\
+}
 
-% Include the name of the author that should appear in the running header
+
 \begin{document}
-
+\maketitle
 \section*{Supporting Information}
 \newcommand{\beginsupplement}{
                \setcounter{figure}{0}
@@ -19,23 +44,25 @@
 \beginsupplement
 
 
-\begin{figure}[tbh!]
-  \centering
-  \includegraphics[width=\textwidth]{SF/ACHsyn}
-    \caption{Synthesis of activated carbon from human hair using NaOH as the activating agent.}
-  \label{SF:ACHsyn}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=\textwidth]{fig/ACHsyn}
+\caption{Synthesis of activated carbon from human hair using NaOH as the activating agent.}
+\label{fig:ACHsyn}
 \end{figure}
-\begin{figure}[tbh!]
-  \centering
-  \includegraphics[width=\textwidth]{SF/CFExsol}
-    \caption{Synthesis of activated carbon from human hair using NaOH as the activating agent. The choice of temperature and activating agent plays a crucial role in determining pore size of the activated carbon.}
-  \label{SF:CFExsol}
+
+\begin{figure}[th!]
+\centering
+\includegraphics[width=\textwidth]{fig/CFExsol}
+\caption{Synthesis of activated carbon from human hair using NaOH as the activating agent. The choice of temperature and activating agent plays a crucial role in determining pore size of the activated carbon.}
+\label{fig:CFExsol}
 \end{figure}
-\begin{figure}[tbh!]
-  \centering
-  \includegraphics[width=0.5\textwidth]{SF/keratin}
-    \caption{Keratin: a protein abundantly found in human hair contains C-O, C=O, C-NH$_2$ bonds.} 
-    \label{SF:keratin}
+
+\begin{figure}[th!]
+\centering
+\includegraphics[width=0.5\textwidth]{fig/keratin}
+\caption{Keratin: a protein abundantly found in human hair contains C-O, C=O, C-NH$_2$ bonds.}
+\label{fig:keratin}
 \end{figure}
 %\begin{figure}[tbh!]
   %\centering
@@ -54,22 +81,25 @@
     %\caption{Structure of Glutamic acid- another protein found in hemp fibers containing C-O, C=O and C-N bonds.}
   %\label{SF:glutamicacid}
 %\end{figure}
-\begin{figure}[tbh!]
-  \centering
-  \includegraphics[width=\textwidth]{SF/XPSoverall}
-    \caption{Overall spectra of ACH (blck), hemp fibers (blue), CFEx (green) and SUper-P(red).}
-  \label{SF:XPSoverall}
+\begin{figure}[th!]
+\centering
+\includegraphics[width=\textwidth]{fig/XPSoverall}
+\caption{Overall spectra of ACH (blck), hemp fibers (blue), CFEx (green) and SUper-P(red).}
+\label{fig:XPSoverall}
 \end{figure}
-\begin{figure}[tbh!]
-  \centering
-  \includegraphics[width=\textwidth]{SF/hair50mVs}
-    \caption{Cyclic voltammogram of ACH at a scan rate of 50 mV/s in a two electrode setup against \ce{Al3+}/Al showing a capacitor-like behaviour with no visible oxidation-reduction peaks unlike Figure \ref{figures:CV}b where we distinctly observed redox peaks.}
-  \label{SF:hair50mVs}
+
+\begin{figure}[th!]
+\centering
+\includegraphics[width=\textwidth]{fig/hair50mVs}
+\caption{Cyclic voltammogram of ACH at a scan rate of 50 mV/s in a two electrode setup against \ce{Al3+}/Al showing a capacitor-like behaviour with no visible oxidation-reduction peaks unlike Figure \ref{fig:CV}b where we distinctly observed redox peaks.}
+\label{fig:hair50mVs}
 \end{figure}
-\begin{figure}[tbh!]
-  \centering
-  \includegraphics[width=\textwidth]{SF/PEEK}
-    \caption{A custom-made two-electrode polyetherether ketone (PEEK) cell used for galvanostatic cycles and cyclic voltammetry.}
-  \label{SF:PEEK}
+
+\begin{figure}[th!]
+\centering
+\includegraphics[width=\textwidth]{fig/PEEK}
+\caption{A custom-made two-electrode polyetherether ketone (PEEK) cell used for galvanostatic cycles and cyclic voltammetry.}
+\label{fig:PEEK}
 \end{figure}
+
 \end{document}
